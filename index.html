@@ -11,23 +11,24 @@
   </head>
   <body>
     <div class="container">
-      <h1>World Clocks</h1>
-      <select>
+      <h1>World Clock</h1>
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">London</option>
-        <option value="">Rome</option>
-        <option value="">New York</option>
-        <option value="">Tokyo</option>
+        <option value="Europe/London">London 🫖</option>
+        <option value="Europe/Rome">Rome🍕</option>
+        <option value="Asia/Tokyo">Tokyo🍣</option>
       </select>
-      <div class="city" id="paris">
-        <h2>Paris 🇫🇷</h2>
-        <div class="date">February 21st 2024</div>
-        <div class="time">05:24:15 PM</div>
-      </div>
-      <div class="city" id="miami">
-        <h2>Miami🇺🇸</h2>
-        <div class="date">February 21st 2024</div>
-        <div class="time">05:24:15 PM</div>
+      <div id="cities">
+        <div class="city" id="paris">
+          <h2>Paris 🥐</h2>
+          <div class="date"></div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="miami">
+          <h2>Miami 🍔</h2>
+          <div class="date"></div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
     <footer>
