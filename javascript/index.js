@@ -16,6 +16,17 @@ function updateTime() {
 
   miamiDateElement.innerHTML = miamiTime.format("MMMM Do YYYY");
   miamiTimeElement.innerHTML = miamiTime.format("h:mm:ss [<small>]A[</small>]");
+
+  // Valencia
+  let valenciaElement = document.querySelector("#valencia");
+  let valenciaDateElement = valenciaElement.querySelector(".date");
+  let valenciaTimeElement = valenciaElement.querySelector(".time");
+  let valenciaTime = moment().tz("Europe/Madrid");
+
+  valenciaDateElement.innerHTML = valenciaTime.format("MMMM Do YYYY");
+  valenciaTimeElement.innerHTML = valenciaTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function updateCity(event) {
